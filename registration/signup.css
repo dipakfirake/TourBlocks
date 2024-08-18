@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+
+
+}
+body{
+display: flex;
+align-items: center;
+flex-direction: column;
+height: 100vh;
+background: url(https://img.freepik.com/premium-photo/top-view-travel-outfit-accessories-equipment-with-copy-space-black-background_146508-642.jpg);
+background-size: cover;
+}
+form{
+
+margin-top: 50px;
+text-align: center;
+}
+input{
+    display: block;
+    width: 350px;
+    height: 40px;
+    margin: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(20, 20, 20);
+    background: transparent;
+
+}
+button{
+    width: 350px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(8, 197, 33);
+    border: none;
+    color: rgb(250, 244, 244);
+
+}
+form h1{
+margin-bottom: 30px;
+color: white;
+}
+::placeholder{
+    color: white;
+}

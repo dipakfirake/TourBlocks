@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking Admin Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admin.css">
+
+    <style>
+        .side-panel {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            height: 100vh; 
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px; 
+        }
+
+        .side-panel a {
+            color: white;
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .clickable-card {
+            cursor: pointer;
+            width: 400px;
+            height: 350px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .card-img-top {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        body {
+            background-color: rgb(136, 177, 150);
+        }
+    </style>
+</head>
+<body>
+    <div class="side-panel">
+        <h2>Menu</h2>
+        <a href="admin.html">Admin Home</a>
+        <a href="sample.php">Registered Users</a>
+        <a href="fetch_bookings.php">Bookings</a>
+        <a href="#">Feedback</a>
+        <a href="fetch_contact.php">Contact Us</a>
+        <a href="signup.php">Users Signup </a>
+        <a href="home.html">Website Home</a>
+    </div>
+
+    <center><h1>TourBlocks Admin Panel</h1></center>
+   <marquee behavior="scroll" direction="right"> <h5>(A Tour Booking Platform)</h5></marquee>
+
+   <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-4">
+        <a href="sample.php">
+          <div class="card clickable-card">
+            <img src="https://plus.unsplash.com/premium_photo-1685214580428-7eae1a78e7bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG9naW58ZW58MHx8MHx8fDA%3D" width="400" height="300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Registered Users</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-4">
+        <a href="fetch_contact.php">
+          <div class="card clickable-card">
+            <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHwwD"  width="400" height="300" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Contact Us</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-4">
+        <a href="fetch_bookings.php">
+          <div class="card clickable-card">
+            <img src="https://imgs.search.brave.com/061ZQHk4n3MN4dfuVU8V4rjpWudWXaSzZEzd7nUQ_RM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9i/b29raW5nLWhvdGVs/LXJlc2VydmF0aW9u/LXRyYXZlbC1kZXN0/aW5hdGlvbi1jb25j/ZXB0XzUzODc2LTEy/MTA5NC5qcGc_c2l6/ZT02MjYmZXh0PWpw/Zw"  width="400" height="200" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Booking</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

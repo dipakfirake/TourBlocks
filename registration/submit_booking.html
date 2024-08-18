@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/bookingpagephoto.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding-top: 20px; 
+        }
+
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            background: transparent;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333; 
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Book Your Tour</h2>
+    <form action="insert_booking.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone" required><br>
+
+        <label for="package">Package:</label><br>
+        <select id="package" name="package" required>
+            <option value="Dubai">Dubai</option>
+            <option value="Goa">Goa</option>
+            <option value="New York">New York</option>
+            <option value="Bali">Bali</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Sydney">Sydney</option>
+        </select><br>
+
+        <label for="category">Category:</label><br>
+        <select id="category" name="category" required>
+            <option value="Bungee Jump">Bungee Jump</option>
+            <option value="Scuba Diving">Scuba Diving</option>
+            <option value="Canoeing">Canoeing</option>
+        </select><br>
+
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="adults">No. of Adults:</label><br>
+        <input type="number" id="adults" name="adults" required><br>
+
+        <label for="children">No. of Children:</label><br>
+        <input type="number" id="children" name="children" required><br>
+
+        <label for="address">Customer Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="/website/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .image-card {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-card img {
+            width: 50%;
+            height: auto;
+            display: block;
+        }
+        .sub-cards {
+            display: none;
+            padding: 10px;
+        }
+        .sub-card {
+            display: inline-block;
+            width: calc(20% - 10px);
+            margin-right: 10px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        .sub-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo"><i class="fas fa-map-marker-alt"></i> Tourblocks</a>
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="home.html">home</a>
+        <a href="#about">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="adventure.html">Adventure</a>
+        <a href="package.html">package</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div> 
+        <div id="search-btn" class="fas fa-search"></div>
+      
+    </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <!-- Image Card 1 -->
+        <div class="image-card" onclick="toggleSubcards('subcards1')">
+            <img src="https://images.unsplash.com/photo-1592241724006-f068a14cc7dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRvdXJ8ZW58MHx8MHx8fDA%3D"  alt="Image 1">
+            <div class="sub-cards" id="subcards1">
+                <!-- Sub Cards for Image 1 -->
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1592241724006-f068a14cc7dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 1">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1592241724006-f068a14cc7dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 2">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1592241724006-f068a14cc7dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 3">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1592241724006-f068a14cc7dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 4">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1592241724006-f068a14cc7dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 5">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image Card 2 -->
+        <div class="image-card" onclick="toggleSubcards('subcards2')">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvdXJ8ZW58MHx8MHx8fDA%3D"  alt="Image 2">
+            <div class="sub-cards" id="subcards2">
+                <!-- Sub Cards for Image 2 -->
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 1">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 2">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 3">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 4">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 5">
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Card 3 -->
+        <div class="image-card" onclick="toggleSubcards('subcards3')">
+            <img src="https://images.unsplash.com/photo-1615278166719-c411455d594d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHRvdXJ8ZW58MHx8MHx8fDA%3D"  alt="Image 3">
+            <div class="sub-cards" id="subcards3">
+                <!-- Sub Cards for Image 3 -->
+                <div class="sub-card">
+                    <img src="" alt="Sub Image 1">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1615278166719-c411455d594d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 2">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1615278166719-c411455d594d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 3">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1615278166719-c411455d594d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 4">
+                </div>
+                <div class="sub-card">
+                    <img src="https://images.unsplash.com/photo-1615278166719-c411455d594d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHRvdXJ8ZW58MHx8MHx8fDA%3D" alt="Sub Image 5">
+                </div>
+            </div>
+        </div>
+       
+    <script>
+        function toggleSubcards(id) {
+            var subcards = document.getElementById(id);
+            if (subcards.style.display === "none" || subcards.style.display === "") {
+                subcards.style.display = "block";
+            } else {
+                subcards.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

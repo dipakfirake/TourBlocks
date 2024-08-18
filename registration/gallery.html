@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .image-card {
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-card img {
+            width: 50%;
+            height: auto;
+            display: block;
+        }
+        .sub-cards {
+            display: none;
+            padding: 10px;
+        }
+        .sub-card {
+            display: inline-block;
+            width: calc(20% - 10px);
+            margin-right: 10px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        .sub-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        hr{
+           border: #070000;
+        }
+    </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo"><i class="fas fa-map-marker-alt"></i> Tourblocks</a>
+    <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="adventure.html">Adventure</a>
+        <a href="package.html">Package</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div> 
+        <div id="search-btn" class="fas fa-search"></div>
+      
+    </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <br>
+        <br>
+
+        <h1>GOA</h1>
+        <!--  Card 1 -->
+        <div class="image-card" onclick="toggleSubcards('subcards1')">
+            <img src="images/goa.jpg"  alt="Image 1">
+            <div class="sub-cards" id="subcards1">
+                <!-- Sub Cards 1 -->
+                <div class="sub-card">
+                    <img src="images/goa1.jpg" alt="Sub Image 1">
+                </div>
+                <div class="sub-card">
+                    <img src="images/goa2.jpg" alt="Sub Image 2">
+                </div>
+                <div class="sub-card">
+                    <img src="images/goa3.jpg" alt="Sub Image 3">
+                </div>
+                <div class="sub-card">
+                    <img src="images/goa4.jpg" alt="Sub Image 4">
+                </div>
+                <div class="sub-card">
+                    <img src="images/goa5.jpg" alt="Sub Image 5">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <h1>DUBAI</h1>
+        <!--  Card 2 -->
+        <div class="image-card" onclick="toggleSubcards('subcards2')">
+            <img src="images/dubai.jpg"  alt="Image 2">
+            <div class="sub-cards" id="subcards2">
+                <!-- Sub Cards  2 -->
+                <div class="sub-card">
+                    <img src="images/dubai1.jpg" alt="Sub Image 1">
+                </div>
+                <div class="sub-card">
+                    <img src="images/dubai2.jpg" alt="Sub Image 2">
+                </div>
+                <div class="sub-card">
+                    <img src="images/dubai3.jpg" alt="Sub Image 3">
+                </div>
+                <div class="sub-card">
+                    <img src="images/dubai4.jpg" alt="Sub Image 4">
+                </div>
+                <div class="sub-card">
+                    <img src="images/dubai5.jpg" alt="Sub Image 5">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+
+        <h1>BALI</h1>
+        <!--  Card 3 -->
+        <div class="image-card" onclick="toggleSubcards('subcards3')">
+            <img src="images/bali.jpg"  alt="Image 3">
+            <div class="sub-cards" id="subcards3">
+                <!-- Sub Cards  3 -->
+                <div class="sub-card">
+                    <img src="images/bali1.jpg" alt="Sub Image 1">
+
+                </div>
+                <div class="sub-card">
+                    <img src="images/bali2.jpg" alt="Sub Image 2">
+                </div>
+                <div class="sub-card">
+                    <img src="images/bali3.jpg" alt="Sub Image 3">
+                </div>
+                <div class="sub-card">
+                    <img src="images/bali4.jpg" alt="Sub Image 4">
+                </div>
+                <div class="sub-card">
+                    <img src="images/bali5.jpg" alt="Sub Image 5">
+                </div>
+            </div>
+        </div>
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <h3>Quick links</h3>
+                    <a href="home.html">home</a>    
+                    <a href="package.html">packages</a>
+                    <a href="feedback.html">Feedback</a>
+                </div>
+        
+               
+        
+                <div class="box">
+                    <h3>contact info</h3>
+                    <a href="tel:+911800 182 168"> <i class="fas fa-phone"></i> +91 1800 182 168 </a>
+                    <a href="mailto: TourBlocks@gmail.com"> <i class="fas fa-envelope"></i> TourBlocks@gmail.com </a>
+                    <a href="#"> <i class="fas fa-map"></i> Nashik, india - 422004 </a>
+                </div>
+        
+                <div class="box">
+                    <h3>follow us</h3>
+                    
+                    <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+                    <a href="https://www.linkedin.com/in/"> <i class="fab fa-linkedin"></i> linkedin </a>
+                    
+                </div>
+            </div>
+            <div class="credit">Created by <span>Group</span> | All rights reserved!</div>
+        </section>
+       
+    <script>
+        function toggleSubcards(id) {
+            var subcards = document.getElementById(id);
+            if (subcards.style.display === "none" || subcards.style.display === "") {
+                subcards.style.display = "block";
+            } else {
+                subcards.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
